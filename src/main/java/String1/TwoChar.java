@@ -15,7 +15,7 @@ public class TwoChar {
 
     public static String twoChar(String str, int index) {
 
-        if ()
-        return (index == 2) ? str.substring(2, 4) : str.substring(0, 2);
+
+        return "";//(index == 2) ? str.substring(2, 4) : str.substring(0, 2);
     }
 }
