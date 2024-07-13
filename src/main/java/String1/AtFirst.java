@@ -8,6 +8,7 @@ public class AtFirst {
         System.out.println(atFirst("hi"));
         System.out.println(atFirst("h"));
 
+
     }
 
     //solution
