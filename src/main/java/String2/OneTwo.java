@@ -12,6 +12,8 @@ public class OneTwo {
     }
 
 
+
+
     //solution
 
     public static String oneTwo(String str) {
@@ -26,6 +28,15 @@ public class OneTwo {
 
         return sb.toString();
     }
+
+
+
+
+
+
+
+
+
 
   /*  public static String oneTwo(String str) {
         StringBuilder sb = new StringBuilder();
