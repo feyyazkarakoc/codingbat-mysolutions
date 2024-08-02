@@ -20,4 +20,10 @@ public class XyzThere {
         return str.contains("xyz");
 
     }
+
+
+
+   /* public static boolean xyzThere(String str) {
+        return str.replace(".xyz","").contains("xyz");
+    }*/
 }
