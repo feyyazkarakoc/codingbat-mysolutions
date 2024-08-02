@@ -11,7 +11,19 @@ public class XyBalance {
 
     //solution
 
+
+
     public static boolean xyBalance(String str) {
+
+        return str.lastIndexOf("y")>str.lastIndexOf("x")||!str.contains("x");
+
+    }
+
+
+
+
+
+   /* public static boolean xyBalance(String str) {
 
         if (str.lastIndexOf("y") > str.lastIndexOf("x")) {
             return true;
@@ -22,6 +34,6 @@ public class XyBalance {
         }
 
 
-    }
+    }*/
 
 }
