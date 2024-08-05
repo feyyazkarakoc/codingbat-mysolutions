@@ -31,6 +31,25 @@ public class XyzMiddle {
     }
 
 
+   /* public static boolean xyzMiddle(String str) {
+
+        for (int i = 0; i < str.length() - 2; i++) {
+            if (str.substring(i, i + 3).equals("xyz")) {
+
+                int len1 = str.substring(0, i).length();
+                int len2 = str.substring(i + 3).length();
+                int len3 = len1 - len2;
+                if (len3 >= -1 && len3 <= 1) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }*/
+
+
+
 
 
    /* public static boolean xyzMiddle(String str) {
