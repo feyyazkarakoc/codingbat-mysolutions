@@ -17,6 +17,17 @@ public class OneTwo {
     //solution
 
     public static String oneTwo(String str) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < str.length() - 2; i += 3) {
+            sb.append(str.substring(i + 1, i + 3)).append(str.substring(i, i + 1));
+        }
+        return sb.toString();
+    }
+
+
+
+
+  /*  public static String oneTwo(String str) {
 
         StringBuilder sb = new StringBuilder();
 
@@ -27,7 +38,7 @@ public class OneTwo {
         }
 
         return sb.toString();
-    }
+    }*/
 
 
 

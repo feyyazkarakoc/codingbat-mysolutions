@@ -14,15 +14,32 @@ public class ZipZap {
 
 
 
-    //solution-1
+    //solution
+
+    public static String zipZap(String str) {
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            if (i < str.length() - 2 && str.charAt(i) == 'z' && str.charAt(i + 2) == 'p') {
+                sb.append("zp");
+                i += 2;
+            } else {
+                sb.append(str.charAt(i));
+            }
+        }
+        return sb.toString();
+    }
 
 
-   public static String zipZap(String str) {
+
+
+
+   /*public static String zipZap(String str) {
         return str.replaceAll("z.p","zp");
-   }
+   }*/
 
 
-    //solution-2
+
 
   /*  public static String zipZap(String str) {
 
@@ -50,6 +67,8 @@ public class ZipZap {
   /*  public static String zipZap(String str) {
         return str.replaceAll("z.p","zp");
     }*/
+
+
 
    /* public static String zipZap(String str) {
         StringBuilder sb = new StringBuilder();
