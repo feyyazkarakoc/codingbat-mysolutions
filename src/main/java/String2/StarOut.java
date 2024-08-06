@@ -33,6 +33,8 @@ public class StarOut {
 
 
 
+
+
    /* public static String starOut(String str) {
         StringBuilder sb = new StringBuilder();
         int len = str.length();

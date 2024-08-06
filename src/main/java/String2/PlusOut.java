@@ -12,7 +12,27 @@ public class PlusOut {
     }
 
 
+    //solution
+
     public static String plusOut(String str, String word) {
+        StringBuilder sb = new StringBuilder();
+        int len = word.length();
+        for (int i = 0; i < str.length(); i++) {
+            if (i <= str.length() - len && str.substring(i, i + len).equals(word)) {
+                sb.append(word);
+                i += len - 1;
+
+            } else {
+                sb.append("+");
+            }
+        }
+        return sb.toString();
+    }
+
+
+
+
+  /*  public static String plusOut(String str, String word) {
         StringBuilder sb = new StringBuilder();
         int i = 0;
         while (i<str.length()) {
@@ -25,10 +45,7 @@ public class PlusOut {
             }
         }
         return sb.toString();
-    }
-
-
-
+    }*/
 
 
 
