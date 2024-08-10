@@ -14,6 +14,8 @@ public class CenteredAverage {
         System.out.println(centeredAverage(num3));
     }
 
+    
+
     //solution
 
     public static int centeredAverage(int[] nums) {
