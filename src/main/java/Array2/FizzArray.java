@@ -21,8 +21,8 @@ public class FizzArray {
             for(int i = 0; i<n;i++){
                 nums[i]=i;
             }
-            return nums;
+
         }
-        return new int[0];
+        return nums;
     }
 }
