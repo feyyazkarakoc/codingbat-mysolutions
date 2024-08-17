@@ -22,12 +22,35 @@ public class Has12 {
                 for (int j = i; j < nums.length; j++) {
                     if (nums[j] == 2) {
                         return true;
-
                     }
-
                 }
             }
         }
         return false;
     }
+
+
+
+
+
+  /*  public static boolean has12(int[] nums) {
+        boolean has1 = false;
+        for (int n : nums){
+            if (n==1) has1 = true;
+            if (has1 && n==2) return true;
+        }
+
+        return false;
+    }*/
+
+
+   /* public static boolean has12(int[] nums) {
+        boolean has1 = false;
+        for (int n : nums) {
+            if (n == 1) has1 = true;
+            if (has1 && n == 2) return true;
+        }
+        return false;
+
+    }*/
 }
