@@ -17,8 +17,20 @@ public class ModThree {
 
     //solution
 
-
     public static boolean modThree(int[] nums) {
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (nums[i] % 2 == nums[i + 1] % 2 && nums[i] % 2 == nums[i + 2] % 2) {
+                return true;
+            }
+
+        }
+        return false;
+    }
+
+
+
+
+   /* public static boolean modThree(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] % 2 == 0) {
                 if (i + 1 < nums.length && nums[i + 1] % 2 == 0) {
@@ -37,5 +49,8 @@ public class ModThree {
             }
         }
         return false;
-    }
+    }*/
+
+
+
 }
