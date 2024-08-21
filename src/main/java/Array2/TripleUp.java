@@ -1,6 +1,6 @@
 package Array2;
 
-public class tripleUp {
+public class TripleUp {
 
     public static void main(String[] args) {
 
