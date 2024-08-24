@@ -19,8 +19,9 @@ public class TenRun {
 
     //solution
 
-   /* public static int[] tenRun(int[] nums) {
+    public static int[] tenRun(int[] nums) {
         int[] arr = new int[nums.length];
+        System.out.println(Arrays.toString(arr));
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] % 10 == 0) {
                 arr[i] = nums[i];
@@ -34,18 +35,33 @@ public class TenRun {
         }
 
         return arr;
+    }
+
+
+   /* public static int[] tenRun(int[] nums) {
+        int multiply = -1;
+        for (int i = 0; i < nums.length; i++) {
+            if ((nums[i] % 10) == 0) {
+                multiply = nums[i];
+            } else if (multiply != -1) {
+                nums[i] = multiply;
+            }
+        }
+        return nums;
     }*/
 
 
-
-    public static int[] tenRun(int[] nums) {
-       int multiply = -1;
+   /* public static int[] tenRun(int[] nums) {
+        int multiply = -1;
         for (int i = 0; i < nums.length ; i++) {
-
-            if ((nums[i]&10)==0){
-                multiply=nums[i];
-            }else ()
-
+           if (nums[i]%10==0){
+               multiply=nums[i];
+           } else if (multiply!=-1) {
+               nums[i]=multiply;
+           }
         }
-    }
+        return nums;
+    }*/
+
+
 }
