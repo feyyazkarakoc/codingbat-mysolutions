@@ -1,6 +1,6 @@
 package String1;
 
-public class deFront {
+public class DeFront {
 
 
     public static void main(String[] args) {
