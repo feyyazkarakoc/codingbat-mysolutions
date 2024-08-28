@@ -18,7 +18,7 @@ public class ZeroMax {
 
 
     //solution
-   /* public static int[] zeroMax(int[] nums) {
+    public static int[] zeroMax(int[] nums) {
         int largestOdd = -1;
         for (int i = nums.length-1; i >=0 ; i--) {
             if (nums[i]%2==1){
@@ -30,11 +30,11 @@ public class ZeroMax {
             }
         }
         return nums;
-    }*/
+    }
 
 
 
-    public static int[] zeroMax(int[] nums) {
+   /* public static int[] zeroMax(int[] nums) {
         int largestOdd = -1;
         for (int i = nums.length - 1; i >= 0; i--) {
             if (nums[i] % 2 == 1) {
@@ -44,7 +44,7 @@ public class ZeroMax {
             }
         }
         return nums;
-    }
+    }*/
 
 
 
