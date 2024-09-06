@@ -11,9 +11,9 @@ public class MakeBrick {
     }
 
     public static boolean makeBrick(int small,int big,int goal){
-        int maxBigBricks=big/5;
+        int maxBigBricks=goal/5;
         int usedBigBricks=Math.min(maxBigBricks,big);
-        int remainingSmallBrick=goal-usedBigBricks;
+        int remainingSmallBrick=goal-usedBigBricks*5;
         return remainingSmallBrick<=small;
     }
 }
