@@ -10,6 +10,9 @@ public class MakeChocolate {
 
     }
 
+
+    //solution
+
     public static int makeChocolate(int small, int big, int goal) {
 
         int maxBig = goal / 5;

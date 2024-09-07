@@ -10,6 +10,9 @@ public class MakeBrick {
 
     }
 
+
+    //solution
+
     public static boolean makeBrick(int small,int big,int goal){
         int maxBigBricks=goal/5;
         int usedBigBricks=Math.min(maxBigBricks,big);

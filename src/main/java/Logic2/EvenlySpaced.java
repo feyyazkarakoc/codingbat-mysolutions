@@ -10,6 +10,9 @@ public class EvenlySpaced {
 
     }
 
+
+    //solution
+
     public static boolean evenlySpaced(int a, int b, int c) {
 
         int large = Math.max(a, Math.max(b, c));
@@ -17,6 +20,7 @@ public class EvenlySpaced {
         int medium = a + b + c - large - small;
         return (large - medium) == (medium - small);
     }
+
 
 
    /* public static boolean evenlySpaced(int a, int b, int c) {

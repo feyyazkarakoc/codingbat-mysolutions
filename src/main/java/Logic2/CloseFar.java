@@ -10,6 +10,9 @@ public class CloseFar {
 
     }
 
+
+    //solution
+
     public static boolean closeFar(int a, int b, int c) {
         int x = Math.abs(a - b);
         int y = Math.abs(a - c);
