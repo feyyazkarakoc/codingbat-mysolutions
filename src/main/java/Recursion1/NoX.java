@@ -13,8 +13,8 @@ public class NoX {
     //solution
 
     public static String noX(String str) {
-      if (str.length()==0) return "";
-      return (str.startsWith("x") ? "" : str.charAt(0)) + noX(str.substring(1));
+        if (str.length() == 0) return "";
+        return (str.startsWith("x") ? "" : str.charAt(0)) + noX(str.substring(1));
 
     }
 }
