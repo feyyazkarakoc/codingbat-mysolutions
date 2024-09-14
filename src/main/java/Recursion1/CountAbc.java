@@ -16,7 +16,5 @@ public class CountAbc {
     public static int countAbc(String str) {
         if (str.length() < 3) return 0;
         return (str.startsWith("abc") || str.startsWith("aba") ? 1 : 0) + countAbc(str.substring(1));
-
-
     }
 }
