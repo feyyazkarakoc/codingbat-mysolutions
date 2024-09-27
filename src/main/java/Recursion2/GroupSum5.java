@@ -41,6 +41,32 @@ public class GroupSum5 {
     }
 
 
+   /* public static boolean groupSum5(int start, int[] nums, int target) {
+
+        if (start >= nums.length && target == 0) return true;
+
+        if (start >= nums.length) return false;
+
+        if (nums[start] % 5 == 0) {
+
+            if (start + 1 < nums.length && nums[start + 1] == 1) {
+                return groupSum5(start + 2, nums, target - nums[start]);
+            }
+            return groupSum5(start + 1, nums, target - nums[start]);
+
+        }
+
+        if (groupSum5(start + 1, nums, target - nums[start])) {
+            return true;
+        }
+
+        if (groupSum5(start + 1, nums, target)) {
+            return true;
+        }
+
+        return false;
+    }*/
+
 
 
 
