@@ -47,6 +47,39 @@ public class GroupSumClump {
 
 
 
+
+
+
+  /*  public static boolean groupSumClump(int start, int[] nums, int target) {
+
+        if (start >= nums.length && target == 0) return true;
+
+        if (start >= nums.length) return false;
+
+        int sum = nums[start];
+        int count = 1;
+        while (start + count < nums.length && nums[start] == nums[start + count]) {
+            sum += nums[start + 1];
+            count++;
+        }
+
+        if (groupSumClump(start + count, nums, target - sum)) {
+            return true;
+        }
+
+        if (groupSumClump(start + count, nums, target)) {
+            return true;
+        }
+
+        return false;
+    }*/
+
+
+
+
+
+
+
   /*  public static boolean groupSumClump(int start, int[] nums, int target) {
 
         if (start >= nums.length) return target == 0;
