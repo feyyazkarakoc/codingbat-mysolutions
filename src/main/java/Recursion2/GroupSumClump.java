@@ -59,7 +59,7 @@ public class GroupSumClump {
         int sum = nums[start];
         int count = 1;
         while (start + count < nums.length && nums[start] == nums[start + count]) {
-            sum += nums[start + 1];
+            sum += nums[start + count];
             count++;
         }
 
