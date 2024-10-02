@@ -38,4 +38,30 @@ public class SplitOdd10 {
         return false;
 
     }
+
+
+
+
+
+
+
+   /* public static boolean splitOdd10(int[] nums) {
+        return splitOdd10Helper(nums,0,0,0);
+    }
+
+   public static boolean splitOdd10Helper(int[] nums, int group1Sum, int group2Sum, int index) {
+
+        if (index >= nums.length) return (group1Sum % 10 == 0) && (group2Sum % 2 == 1);
+
+        if (splitOdd10Helper(nums, group1Sum + nums[index], group2Sum, index + 1)) {
+            return true;
+        }
+
+        if (splitOdd10Helper(nums, group1Sum, group2Sum + nums[index], index + 1)) {
+            return true;
+        }
+
+        return false;
+
+    }*/
 }
