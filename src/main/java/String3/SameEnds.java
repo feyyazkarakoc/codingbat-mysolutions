@@ -4,37 +4,31 @@ public class SameEnds {
 
     public static void main(String[] args) {
 
-        System.out.println( sameEnds("abXYab"));
-        System.out.println( sameEnds("xx"));
-        System.out.println( sameEnds("xxx"));
+        System.out.println(sameEnds("abXYab"));
+        System.out.println(sameEnds("xx"));
+        System.out.println(sameEnds("xxx"));
 
     }
 
 
-
-    //solutions
+    //solution
 
     public static String sameEnds(String string) {
 
         StringBuilder sb = new StringBuilder();
-        if (!string.isEmpty()) {
+        int len = string.length();
 
-            for (int i = 0; i < string.length()/2; i++) {
+        for (int i = 1; i <= len / 2; i++) {
 
-                if (string.charAt(i) == string.charAt(string.length() - 1 - i)) {
-                    sb.append(string.charAt(i));
+            String prefix = string.substring(0, i);
+            String suffix = string.substring(len - i);
 
-                    if (string.charAt(i + 1) != string.charAt(string.length() - 2 - i)) {
-                        break;
-                    }
-                }
-
+            if (prefix.equals(suffix)) {
+                sb = new StringBuilder("");
+                sb.append(prefix);
             }
 
         }
-
         return sb.toString();
-
-
     }
 }
