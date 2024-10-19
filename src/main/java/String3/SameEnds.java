@@ -14,17 +14,17 @@ public class SameEnds {
 
     //solutions
 
-    public static String sameEnds(String str) {
+    public static String sameEnds(String string) {
 
         StringBuilder sb = new StringBuilder();
-        if (!str.isEmpty()){
+        if (!string.isEmpty()) {
 
-            for (int i = 0; i < str.length()-1 ; i++) {
+            for (int i = 0; i < string.length()/2; i++) {
 
-                if (str.charAt(i)==str.charAt(str.length()-1-i)){
-                    sb.append(str.charAt(i));
+                if (string.charAt(i) == string.charAt(string.length() - 1 - i)) {
+                    sb.append(string.charAt(i));
 
-                    if (str.charAt(i+1)!=str.charAt(str.length()-2-i)){
+                    if (string.charAt(i + 1) != string.charAt(string.length() - 2 - i)) {
                         break;
                     }
                 }
