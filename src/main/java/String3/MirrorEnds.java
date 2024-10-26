@@ -18,26 +18,32 @@ public class MirrorEnds {
         StringBuilder sb = new StringBuilder();
         int len = string.length();
 
-        for (int i = 0; i <= len / 2; i++) {
+        for (int i = 0; i < len; i++) {
 
-            if (string.charAt(0)==string.charAt(string.length()-1)){
+            if (string.charAt(i) == string.charAt(len - 1 - i)) {
+                sb.append(string.charAt(i));
+            } else break;
 
-            }
-
-            String prefix = string.substring(0, i);
-            String suffix = string.substring(len - i);
-
-            for (int j = suffix.length()-1; j >=0 ; j--) {
-
-                suffix+=""+suffix.charAt(j);
-
-            }
-
-            if (prefix.equals(suffix)) {
-                sb = new StringBuilder(prefix);
-
-            }
         }
+
         return sb.toString();
     }
+
+
+
+
+   /* public static String mirrorEnds(String string) {
+
+        StringBuilder sb = new StringBuilder();
+        int len = string.length();
+
+        for (int i = 0; i < len; i++) {
+
+            if (string.charAt(i) == string.charAt(len - 1 - i)) {
+                sb.append(string.charAt(i));
+            }
+        }
+
+        return sb.toString();
+    }*/
 }
