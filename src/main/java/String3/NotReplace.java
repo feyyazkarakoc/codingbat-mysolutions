@@ -15,6 +15,17 @@ public class NotReplace {
 
     public static String notReplace(String str) {
 
+        return str.replaceAll("\\bis\\b", "is not");
+
+    }
+
+
+
+
+
+
+    /* public static String notReplace(String str) {
+
         StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < str.length(); i++) {
@@ -49,5 +60,21 @@ public class NotReplace {
         return sb.toString();
 
 
-    }
+    }*/
+
+
+
+
+
+
+
+
+/*  \\b ifadesi, kelime sınırlarını belirtir. Bu sayede, "is" sadece bir kelime olarak yer alıyorsa değiştirilir. "this" gibi bir kelimenin içindeki "is" ifadesini değiştirmez.
+\\b ifadesi bir düzenli ifade (regex) tanımıdır ve "kelime sınırı" anlamına gelir. Yani, bir kelimenin başını veya sonunu belirtir. Bu sayede "is" ifadesini yalnızca bağımsız bir kelime olarak bulup değiştirebiliriz.
+
+
+
+\b, düzenli ifadelerde bir kelime sınırını ifade eder.
+Java'da ters bölü (\) özel bir karakter olduğu için, regex içinde kullanmak istediğimizde iki kez yazmamız gerekir (\\). Bu yüzden \\b şeklinde yazarız.
+\\b ifadesi, bir kelimenin başlangıcı veya sonu gibi bir sınır olduğunu belirtir. Harf, rakam veya alt çizgi (_) olmayan bir karakter ile çevrili bir konumu işaret eder.*/
 }
