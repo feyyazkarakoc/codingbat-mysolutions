@@ -77,4 +77,25 @@ public class NotReplace {
 \b, düzenli ifadelerde bir kelime sınırını ifade eder.
 Java'da ters bölü (\) özel bir karakter olduğu için, regex içinde kullanmak istediğimizde iki kez yazmamız gerekir (\\). Bu yüzden \\b şeklinde yazarız.
 \\b ifadesi, bir kelimenin başlangıcı veya sonu gibi bir sınır olduğunu belirtir. Harf, rakam veya alt çizgi (_) olmayan bir karakter ile çevrili bir konumu işaret eder.*/
+
+
+
+    /*replaceAll metodu, String içinde belirtilen deseni (örneğin, regex) bulup yerine belirtilen yeni değeri koyarak değiştirilmiş yeni bir String döndürür.
+
+Ancak, String sınıfı değiştirilemez (immutable) olduğu için replaceAll gibi metotlar aslında orijinal String'i değiştirmez; onun yerine yeni bir String nesnesi döndürür. Yani replaceAll, orijinal String üzerinde bir değişiklik yapmaz, fakat yapılan değişiklikleri içeren yeni bir String döndürür.
+
+Özetle:
+Orijinal String değişmez: replaceAll orijinal String üzerinde bir değişiklik yapmaz.
+Yeni bir String döndürür: Değişiklik yapılmış hali yeni bir String olarak döndürülür.
+Örneğin:
+
+String original = "This is a test.";
+String modified = original.replaceAll("\\bis\\b", "is not");
+
+System.out.println("Original: " + original);  // Output: "This is a test."
+System.out.println("Modified: " + modified);  // Output: "This is not a test."
+Bu örnekte, original String değişmeden kalır ve modified değişkeni, replaceAll sonucu elde edilen yeni String’i tutar.*/
+
+
+
 }
