@@ -19,6 +19,42 @@ public class Split53 {
 
     //solution
 
+    public static boolean split53(int[] nums) {
+        return split53Helper(nums, 0, 0, 0);
+    }
+
+    public static boolean split53Helper(int[] nums, int group1Sum, int group2Sum, int index) {
+
+        if (index >= nums.length) return group1Sum == group2Sum;
+
+        int current = nums[index];
+
+        if (current % 5 == 0) {
+            return split53Helper(nums, group1Sum + current, group2Sum, index + 1);
+        }
+
+        if (current % 3 == 0) {
+            return split53Helper(nums, group1Sum, group2Sum + current, index + 1);
+        }
+
+        if (split53Helper(nums, group1Sum + current, group2Sum, index + 1)) {
+            return true;
+        }
+
+        if (split53Helper(nums, group1Sum, group2Sum + current, index + 1)) {
+            return true;
+        }
+
+        return false;
+    }
+
+
+
+
+
+
+
+
    /* public static boolean split53(int[] nums) {
 
         return split53Helper(nums, 0, 0, 0);
@@ -83,32 +119,5 @@ public class Split53 {
     }*/
 
 
-    public static boolean split53(int[] nums) {
-        return split53Helper(nums, 0, 0, 0);
-    }
 
-    public static boolean split53Helper(int[] nums, int group1Sum, int group2Sum, int index) {
-
-        if (index >= nums.length) return group1Sum == group2Sum;
-
-        int current = nums[index];
-
-        if (current % 5 == 0) {
-            return split53Helper(nums, group1Sum + current, group2Sum, index + 1);
-        }
-
-        if (current % 3 == 0) {
-            return split53Helper(nums, group1Sum, group2Sum + current, index + 1);
-        }
-
-        if (split53Helper(nums, group1Sum + current, group2Sum, index + 1)) {
-            return true;
-        }
-
-        if (split53Helper(nums, group1Sum, group2Sum + current, index + 1)) {
-            return true;
-        }
-
-        return false;
-    }
 }
