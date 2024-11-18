@@ -1,6 +1,6 @@
 package Array1;
 
-import java.util.Arrays;
+
 
 public class Double23 {
 
