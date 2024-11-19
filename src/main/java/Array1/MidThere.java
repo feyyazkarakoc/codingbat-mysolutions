@@ -16,9 +16,9 @@ public class MidThere {
     //solution
     public static int[] midThree(int[] nums) {
 
-        int a = nums.length/2;
+        int mid = nums.length / 2;
 
-        return new int[]{nums[a-1],nums[a],nums[a+1]};
+        return new int[]{nums[mid - 1], nums[mid], nums[mid + 1]};
 
     }
 }
