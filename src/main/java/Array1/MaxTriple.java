@@ -1,6 +1,5 @@
 package Array1;
 
-import java.util.Arrays;
 
 public class MaxTriple {
 
@@ -14,14 +13,17 @@ public class MaxTriple {
 
 
     //solution
-    /*public static int maxTriple(int[] nums) {
+    public static int maxTriple(int[] nums) {
 
         return Math.max(nums[0], Math.max(nums[nums.length / 2], nums[nums.length - 1]));
 
-    }*/
+    }
 
 
-    public static int maxTriple(int[] nums) {
+
+
+
+    /*public static int maxTriple(int[] nums) {
 
         int first = nums[0];
         int middle = nums[nums.length / 2];
@@ -31,7 +33,7 @@ public class MaxTriple {
                 ? (first > last ? first : last)
                 : (middle > last ? middle : last);
 
-    }
+    }*/
 
 
 }
