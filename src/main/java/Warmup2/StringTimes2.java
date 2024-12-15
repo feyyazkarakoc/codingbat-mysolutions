@@ -11,6 +11,8 @@ public class StringTimes2 {
     }
 
 
+    //solution
+
     public static String stringTimes(String str, int n) {
 
         StringBuilder sb = new StringBuilder();

@@ -11,6 +11,8 @@ public class StringBits {
     }
 
 
+
+    //solution
     public static String stringBits(String str) {
 
         StringBuilder sb = new StringBuilder();

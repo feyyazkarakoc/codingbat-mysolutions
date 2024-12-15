@@ -11,6 +11,8 @@ public class CountXX {
     }
 
 
+
+    //solution
     public static int countXX(String str) {
 
         int count = 0;

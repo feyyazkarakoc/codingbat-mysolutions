@@ -11,6 +11,8 @@ public class DoubleX {
     }
 
 
+
+    //solution
     public static boolean doubleX(String str) {
 
         int index = str.indexOf("x");
