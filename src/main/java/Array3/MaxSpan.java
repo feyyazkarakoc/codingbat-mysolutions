@@ -63,36 +63,33 @@ public class MaxSpan {
 
 
 
+    // solution 3 :
    /* public static int maxSpan(int[] nums){
 
         Map<Integer,Integer> map = new HashMap<>();
         int firstIndex =0;
         int lastIndex =0;
-
         int maxSpan = 0;
 
         for (int num: nums) {
             map.put(num,map.getOrDefault(num,0)+1);
         }
 
-        for (Map.Entry entry:map.entrySet()){
+        for (Map.Entry<Integer,Integer> entry:map.entrySet()){
 
-            if ((Integer) entry.getValue()>1){
+            if (entry.getValue() >1){
 
                 for (int i = 0; i < nums.length  ; i++) {
 
-                    if ((Integer)nums[i]==entry.getKey()){
-
+                    if (nums[i]==entry.getKey()){
                         firstIndex = i;
                         break;
-
                     }
                 }
 
                 for (int j = nums.length-1; j >=0 ; j--) {
 
-                    if ((Integer)nums[j]==entry.getKey()){
-
+                    if (nums[j]==entry.getKey()){
                         lastIndex=j;
                         break;
                     }
