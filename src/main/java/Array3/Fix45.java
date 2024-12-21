@@ -18,21 +18,19 @@ public class Fix45 {
     // solution 1 :
     public static int[] fix34(int[] nums) {
 
-        int len = nums.length;
-        int index4 = 0;
+        int index5 = 0;
 
-        for (int i = 0; i < len; i++) {
-
-            if (nums[i] == 3) {
-
-                while (nums[index4] != 4) {
-                    index4++;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 4) {
+                // Bulunacak bir sonraki kullanılabilir 5
+                while (nums[index5] != 5 || (index5 > 0 && nums[index5 - 1] == 4)) {
+                    index5++;
                 }
 
+                // 4'ün hemen sonrasındaki eleman ile uygun 5'in yerini değiştir
                 int temp = nums[i + 1];
-                nums[i + 1] = nums[index4];
-                nums[index4] = temp;
-
+                nums[i + 1] = nums[index5];
+                nums[index5] = temp;
             }
         }
 
