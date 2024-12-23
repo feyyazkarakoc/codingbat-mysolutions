@@ -14,36 +14,24 @@ public class CanBalance {
     }
 
 
-    // solution 1 :
+    // solution :
     public static boolean canBalance(int[] nums) {
 
-        int index5 = 0;
-        int len = nums.length;
+        int totalSum = 0;
+        int leftSum = 0;
 
-        for (int i = 0; i < len; i++) {
-
-            if (nums[i] == 4) {
-
-                while (index5 < len && (nums[index5] != 5 || (index5 > 0 && nums[index5 - 1] == 4))) {
-                    index5++;
-                }
-
-
-                if (index5 < len) {
-
-                    int temp = nums[i + 1];
-                    nums[i + 1] = nums[index5];
-                    nums[index5] = temp;
-
-
-                }
-
-
-            }
+        for (int num : nums) {
+            totalSum += num;
         }
 
+        for (int num : nums) {
 
-        return nums;
+            leftSum+=num;
+
+            if (leftSum == totalSum-leftSum) return true;
+        }
+
+        return false;
     }
 
 }
