@@ -13,7 +13,7 @@ public class SquareUp {
     }
 
 
-    // solution 1:
+    // solution :
     public static int[] squareUp(int n) {
 
         int[] result = new int[n * n];
@@ -27,4 +27,30 @@ public class SquareUp {
 
         return result;
     }
+
+
+   /* public static int[] squareUp(int n) {
+        int[] result = new int[n * n];
+        for (int row = 1; row <= n; row++) {
+            int start = row * n - 1;
+            for (int num = 1; num <= row; num++) {
+                result[start--] = num;
+            }
+        }
+        return result;
+    }*/
+
+
+    /*public static int[] squareUp(int n) {
+        int[] result = new int[n * n];
+        for (int row = 1; row <= n; row++) {
+            int start = row * n - 1;
+            for (int num = 1; num <= row; num++) {
+                result[start--] = num;
+            }
+        }
+        return result;
+    }*/
+
+
 }
