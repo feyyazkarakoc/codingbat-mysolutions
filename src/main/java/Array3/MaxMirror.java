@@ -15,9 +15,7 @@ public class MaxMirror {
 
 
     // solution :
-   /* public static int maxMirror(int[] nums) {
-
-
+    public static int maxMirror(int[] nums) {
         int n = nums.length;
         int maxLen = 0;
 
@@ -33,23 +31,19 @@ public class MaxMirror {
                 while ((i + count < n) && (j + count < n) && (nums[i + count] == reversed[j + count])) {
                     count++;
                 }
-
                 maxLen = Math.max(maxLen, count);
-
             }
-
-
         }
 
         return maxLen;
-
-
-    }*/
-
+    }
 
 
 
-    public static int maxMirror(int[] nums) {
+
+
+
+   /* public static int maxMirror(int[] nums) {
 
         int n = nums.length;
         int maxLen = 0;
@@ -69,6 +63,6 @@ public class MaxMirror {
             }
         }
         return maxLen;
-    }
+    }*/
 
 }
