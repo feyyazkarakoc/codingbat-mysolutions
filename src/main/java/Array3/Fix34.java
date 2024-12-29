@@ -16,7 +16,7 @@ public class Fix34 {
 
 
     // solution 1 :
-    public static int[] fix34(int[] nums) {
+   /* public static int[] fix34(int[] nums) {
 
         int len = nums.length;
         int index4 = 0;
@@ -42,7 +42,7 @@ public class Fix34 {
         }
 
         return nums;
-    }
+    }*/
 
 
 
@@ -171,6 +171,26 @@ public class Fix34 {
 
         return nums;
     }*/
+
+
+
+    public static int[] fix34(int[] nums) {
+
+        int index4 = 0;
+        for (int i = 0; i < nums.length-1; i++) {
+            if (nums[i] == 3 && nums[i + 1] != 4) {
+                while (nums[index4] != 4 || (index4 > 0 && nums[index4 - 1] == 3)) {
+                    index4++;
+                }
+
+                int temp = nums[i + 1];
+                nums[i + 1] = nums[index4];
+                nums[index4] = temp;
+
+            }
+        }
+        return nums;
+    }
 
 
 }

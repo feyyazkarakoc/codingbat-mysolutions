@@ -14,8 +14,8 @@ public class Fix45 {
     }
 
 
-    // solution 1 :
-    public static int[] fix45(int[] nums) {
+    // solution :
+    /*public static int[] fix45(int[] nums) {
 
         int index5 = 0;
         int len = nums.length;
@@ -44,7 +44,9 @@ public class Fix45 {
 
 
             return nums;
-    }
+    }*/
+
+
 
 
     /*public static int[] fix45(int[] nums) {
@@ -71,5 +73,22 @@ public class Fix45 {
     }*/
 
 
+
+    public static int[] fix45(int[] nums) {
+        int index5 = 0;
+        for (int i = 0; i < nums.length - 1; i++) {
+
+            if (nums[i] == 4 && nums[i + 1] != 5) {
+                while (nums[index5] != 5 || (index5 > 0 && nums[index5 - 1] == 4)) {
+                    index5++;
+                }
+
+                int temp = nums[i + 1];
+                nums[i + 1] = nums[index5];
+                nums[index5] = temp;
+            }
+        }
+        return nums;
+    }
 
 }
