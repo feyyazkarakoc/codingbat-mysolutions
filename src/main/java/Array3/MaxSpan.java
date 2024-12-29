@@ -15,7 +15,7 @@ public class MaxSpan {
 
 
     // solution 1:
-   /* public static int maxSpan(int[] nums) {
+    public static int maxSpan(int[] nums) {
 
         int maxSpan = 0;
 
@@ -36,7 +36,7 @@ public class MaxSpan {
         }
 
         return maxSpan;
-    }*/
+    }
 
 
     // solution 2 :
@@ -181,21 +181,32 @@ public class MaxSpan {
     }*/
 
 
-    public static int maxSpan(int[] nums) {
+    /*public static int maxSpan(int[] nums) {
 
         int maxSpan = 0;
         for (int i = 0; i < nums.length; i++) {
 
-            for (int j = nums.length - 1; j > 0; j--) {
+            for (int j = nums.length - 1; j >= 0; j--) {
 
                 if (j >= i && nums[i] == nums[j]) {
                     maxSpan = Math.max(maxSpan, j - i + 1);
-                    break;
+
                 }
             }
         }
         return maxSpan;
-    }
+    }*/
+
+
+   /* public static int maxSpan(int[] nums) {
+        Map<Integer, Integer> firstIndex = new HashMap<>();
+        int maxSpan = 0;
+        for (int i = 0; i < nums.length; i++) {
+            firstIndex.putIfAbsent(nums[i], i);
+            maxSpan = Math.max(maxSpan, i - firstIndex.get(nums[i]) + 1);
+        }
+        return maxSpan;
+    }*/
 
 
 }
