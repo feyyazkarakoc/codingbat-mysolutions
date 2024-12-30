@@ -15,7 +15,7 @@ public class Fix45 {
 
 
     // solution :
-    /*public static int[] fix45(int[] nums) {
+    public static int[] fix45(int[] nums) {
 
         int index5 = 0;
         int len = nums.length;
@@ -44,7 +44,7 @@ public class Fix45 {
 
 
             return nums;
-    }*/
+    }
 
 
 
@@ -74,7 +74,7 @@ public class Fix45 {
 
 
 
-    public static int[] fix45(int[] nums) {
+   /* public static int[] fix45(int[] nums) {
         int index5 = 0;
         for (int i = 0; i < nums.length - 1; i++) {
 
@@ -89,6 +89,6 @@ public class Fix45 {
             }
         }
         return nums;
-    }
+    }*/
 
 }

@@ -1,6 +1,6 @@
 package Array3;
 
-import java.util.Arrays;
+
 
 public class CanBalance {
 
@@ -33,5 +33,33 @@ public class CanBalance {
 
         return false;
     }
+
+
+
+
+
+
+
+
+
+   /* public static boolean canBalance(int[] nums){
+
+        int sum = 0;
+        int leftSum = 0;
+
+        for (int num : nums) {
+            sum += num;
+        }
+
+        for (int num : nums) {
+            leftSum += num;
+
+            if (leftSum == sum - leftSum) {
+                return true;
+            }
+        }
+        return false;
+    }*/
+
 
 }
