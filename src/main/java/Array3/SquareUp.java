@@ -53,4 +53,17 @@ public class SquareUp {
     }*/
 
 
+
+   /* public static int[] squareUp(int n) {
+        int[] result = new int[n * n];
+        for (int i = 1; i <= n; i++) {
+            int lastIndex = i * n - 1;
+            for (int j = 1; j <= i; j++) {
+                result[lastIndex--] = j;
+            }
+        }
+        return result;
+    }*/
+
+
 }

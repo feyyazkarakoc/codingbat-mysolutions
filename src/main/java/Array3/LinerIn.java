@@ -7,8 +7,6 @@ public class LinerIn {
         System.out.println(linearIn(new int[]{1, 2, 4, 6},new int[]{2, 4}));
         System.out.println(linearIn(new int[]{1, 2, 4, 6},new int[]{2, 3, 4}));
         System.out.println(linearIn(new int[]{1, 2, 4, 4, 6},new int[]{2, 4}));
-
-
     }
 
 
@@ -21,15 +19,26 @@ public class LinerIn {
 
             if (innerIndex < inner.length && num == inner[innerIndex]) {
                 innerIndex++;
-
             }
 
             if (innerIndex == inner.length) {
                 return true;
             }
-
         }
-
         return false;
     }
+
+
+
+    /*public static boolean linearIn(int[] outer,int[] inner) {
+        int innerIndex = 0;
+        int len = inner.length;
+        for (int num : outer) {
+            if (innerIndex < len && num == inner[innerIndex]) {
+                innerIndex++;
+            }
+            if (innerIndex == len) return true;
+        }
+        return false;
+    }*/
 }
