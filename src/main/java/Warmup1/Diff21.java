@@ -10,6 +10,8 @@ public class Diff21 {
     }
 
 
+
+    // solution :
     public static int diff21(int n) {
         int abs = Math.abs(n - 21);
         return n > 21 ? 2 * abs : abs;
