@@ -13,6 +13,9 @@ public class Topping1 {
 
     }
 
+
+
+    // solution
     public static Map<String, String> topping1(Map<String, String> map) {
 
         if (map.containsKey("ice cream")) {

@@ -12,6 +12,8 @@ public class Topping2 {
         System.out.println(topping2(new HashMap<>(Map.of("yogurt", "salt"))));
     }
 
+
+    // solution
     public static Map<String, String> topping2(Map<String, String> map) {
 
         if (map.containsKey("ice cream")) {
