@@ -16,7 +16,7 @@ public class Pairs {
 
 
     // solution 1 :
-   /* public static Map<String, String> pairs(String[] strings) {
+    public static Map<String, String> pairs(String[] strings) {
 
         Map<String, String> map = new HashMap<>();
         for (String str : strings) {
@@ -24,7 +24,7 @@ public class Pairs {
         }
 
         return map;
-    }*/
+    }
 
 
     // solution 2 :
@@ -41,9 +41,11 @@ public class Pairs {
 
 
     // solution 3 :
-    public static Map<String, String> pairs(String[] strings) {
-        return Arrays.stream(strings)
-                .distinct()
-                .collect(Collectors.toMap(s -> s.substring(0, 1), s -> s.substring(s.length() - 1)));
-    }
+    /*public static Map<String, String> pairs(String[] strings) {
+        Map<String, String> map = new HashMap<>();
+        Arrays.asList(strings)
+                .forEach(s -> map.put(s.substring(0, 1), s.substring(s.length() - 1)));
+
+        return map;
+    }*/
 }
