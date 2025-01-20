@@ -17,18 +17,39 @@ public class Square {
 
 
 
-    // solution 1 :
-    /*public static List<Integer> square(List<Integer> nums) {
 
+    // solution 1 :
+    public static List<Integer> square(List<Integer> nums) {
+
+        return nums.stream()
+                .map(t -> t * t)
+                .collect(Collectors.toList());
+    }
+
+
+
+    // solution 2 :
+   /*public static List<Integer> square(List<Integer> nums) {
+        nums.replaceAll(t -> t * t);
+        return nums;
+    }*/
+
+
+    /*public static List<Integer> square(List<Integer> nums) {
         return nums.stream()
                 .map(t -> t * t)
                 .collect(Collectors.toList());
     }*/
 
 
-    // solution 2 :
-    public static List<Integer> square(List<Integer> nums) {
+
+
+
+    /*public static List<Integer> square(List<Integer> nums) {
         nums.replaceAll(t -> t * t);
         return nums;
-    }
+    }*/
+
+
+
 }
